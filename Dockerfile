@@ -17,8 +17,6 @@ RUN cd /opt/caffe && cp Makefile.config.example Makefile.config && make all
 
 # Add caffe binaries to path
 ENV PATH=$PATH:/opt/caffe/.build_release/tools
-ADD caffe-ld-so.conf /etc/ld.so.conf.d/
-RUN ldconfig
 
 # make + runtest
 RUN cd /opt/caffe && make test && make runtest
