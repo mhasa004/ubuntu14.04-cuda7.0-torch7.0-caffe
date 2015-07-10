@@ -21,4 +21,9 @@ RUN ldconfig
 
 # make + runtest
 RUN cd /opt/caffe && make test
-#RUN cd /opt/caffe && make runtest
+
+# Supress the error - failed to initialize libdc1394
+RUN ln /dev/null /dev/raw1394  
+
+# Following statement may not run because docker hub does not have gpus (I guess)
+# RUN cd /opt/caffe && make runtest
