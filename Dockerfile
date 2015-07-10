@@ -21,4 +21,4 @@ RUN ldconfig
 
 # make + runtest
 RUN cd /opt/caffe && make test
-RUN cd /opt/caffe && make runtest
+#RUN cd /opt/caffe && make runtest
