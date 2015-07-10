@@ -7,7 +7,7 @@ RUN apt-get -y install --no-install-recommends libboost-all-dev
 RUN apt-get -y install libatlas-base-dev
 RUN apt-get -y install python-dev
 RUN apt-get -y install libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler
-RUN apt-get -y libjpeg62 libfreeimage-dev pkgconf python-pip unzip 
+RUN apt-get -y install libjpeg62 libfreeimage-dev pkgconf python-pip unzip 
 
 # clone caffe from github
 RUN cd /opt && git clone https://github.com/BVLC/caffe.git
