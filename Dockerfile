@@ -20,4 +20,5 @@ ENV PATH=$PATH:/opt/caffe/.build_release/tools
 RUN ldconfig
 
 # make + runtest
-RUN cd /opt/caffe && make test && make runtest
+RUN cd /opt/caffe && make test
+RUN cd /opt/caffe && make runtest
